@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #2c1e4a, #5c3a93);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.controles {
+    max-width: 800px;
+    margin: 1.5rem auto 0;
+}
+
+#campoBusca {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-filtro {
+    padding: 10px 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-filtro:hover, .btn-filtro.ativo {
+    background: white;
+    color: #2c1e4a;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+#contadorResultados {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.grade-perfumes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card-perfume {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+.card-perfume:hover {
+    transform: translateY(-5px);
+}
+
+.etiqueta-marca {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+/* Cores personalizadas por marca */
+.marca-boticario { background-color: #006b54; }
+.marca-avon { background-color: #e5005b; }
+.marca-eudora { background-color: #6a1b9a; }
+
+.card-perfume h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.codigo {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.preco {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c1e4a;
+    margin-top: auto;
+}

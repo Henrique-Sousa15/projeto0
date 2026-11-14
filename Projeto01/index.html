@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Perfumes - 500 Fragrâncias</title>
+    <link rel="stylesheet" href="perf.css">
+</head>
+<body>
+
+    <header>
+        <h1>Catálogo de Perfumes</h1>
+        <p>Explore nossa coleção completa com 500 fragrâncias exclusivas</p>
+        
+        <div class="controles">
+            <input type="text" id="campoBusca" placeholder="Buscar perfume por nome ou código...">
+            
+            <div class="filtros">
+                <button class="btn-filtro ativo" data-marca="todos">Todos (500)</button>
+                <button class="btn-filtro" data-marca="Boticário">O Boticário</button>
+                <button class="btn-filtro" data-marca="Avon">Avon</button>
+                <button class="btn-filtro" data-marca="Eudora">Eudora</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <p id="contadorResultados">Exibindo 500 perfumes</p>
+        <div id="gradePerfumes" class="grade-perfumes">
+            <!-- Os 500 perfumes serão inseridos aqui pelo JavaScript -->
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
